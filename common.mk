@@ -166,3 +166,6 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 PRODUCT_PACKAGES += \
 	messaging \
         LiveWallpapersPicker
+
+# Squisher Location
+SQUISHER_SCRIPT := vendor/zos/tools/squisher
