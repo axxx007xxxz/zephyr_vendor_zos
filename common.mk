@@ -156,6 +156,7 @@ PRODUCT_PACKAGES += \
     su \
     Music \
     LockClock \
+    OmniJaws \
     masquerade
 
 # Stagefright FFMPEG plugin
