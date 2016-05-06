@@ -77,6 +77,14 @@ PRODUCT_COPY_FILES +=  \
     vendor/zos/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/zos/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
+# DU Utils Library
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
+
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
+
+
 # SuperSU
 PRODUCT_COPY_FILES += \
    vendor/zos/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
