@@ -142,6 +142,7 @@ PRODUCT_PACKAGES += \
 # Required Packages
 PRODUCT_PACKAGES += \
     Launcher3 \
+    CellBroadcastReceiver \
     su \
     Eleven 
 
@@ -199,7 +200,3 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 
 PRODUCT_PACKAGES += \
 	messaging
-
-# Optimizations
-include vendor/zos/config/optimizations/sm.mk
-
