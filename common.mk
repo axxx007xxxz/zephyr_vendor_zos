@@ -208,3 +208,9 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 
 PRODUCT_PACKAGES += \
 	messaging
+
+# Backup Tool
+PRODUCT_COPY_FILES += \
+vendor/zos/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+vendor/zos/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+vendor/zos/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
