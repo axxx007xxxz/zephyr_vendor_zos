@@ -86,9 +86,15 @@ PRODUCT_BOOT_JARS += \
 
 
 # SuperSU
+ifneq ($(NEEDS_SYSTEMMODE_SU),true)
+PRODUCT_COPY_FILES += \
+    vendor/zos/prebuilt/common/etc/SystemModeSuperSU.zip:system/addon.d/SuperSU.zip \
+    vendor/zos/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+else
 PRODUCT_COPY_FILES += \
    vendor/zos/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/SuperSU.zip \
    vendor/zos/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+endif
 
 # Viper4Android
 PRODUCT_COPY_FILES += \
