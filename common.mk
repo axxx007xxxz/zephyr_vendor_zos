@@ -87,7 +87,7 @@ PRODUCT_BOOT_JARS += \
 
 # SuperSU
 PRODUCT_COPY_FILES += \
-   vendor/zos/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+   vendor/zos/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/SuperSU.zip \
    vendor/zos/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 # Viper4Android
