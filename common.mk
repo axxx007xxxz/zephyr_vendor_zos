@@ -70,7 +70,7 @@ PRODUCT_COPY_FILES += \
 
 # Init file
 PRODUCT_COPY_FILES += \
-    vendor/zos/prebuilt/common/etc/init.local.rc:root/init.cm.rc
+    vendor/zos/prebuilt/common/etc/init.local.rc:root/init.aosp.rc
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
