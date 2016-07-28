@@ -96,6 +96,10 @@ PRODUCT_COPY_FILES += \
    vendor/zos/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 endif
 
+# Substratum
+PRODUCT_COPY_FILES += \
+vendor/zos/prebuilt/common/app/Substratum/Substratum.apk:system/app/Substratum/Substratum.apk
+
 # Viper4Android
 PRODUCT_COPY_FILES += \
    vendor/zos/prebuilt/common/bin/audio_policy.sh:system/audio_policy.sh \
