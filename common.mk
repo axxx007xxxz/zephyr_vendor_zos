@@ -151,7 +151,7 @@ PRODUCT_PACKAGES += \
 
 # Required Packages
 PRODUCT_PACKAGES += \
-    Launcher3 \
+    SlimLauncher \
     CellBroadcastReceiver \
     su \
     Eleven \
