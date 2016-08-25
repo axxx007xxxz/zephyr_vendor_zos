@@ -154,7 +154,8 @@ PRODUCT_PACKAGES += \
     SlimLauncher \
     CellBroadcastReceiver \
     su \
-    Eleven \
+    Music \
+    LockClock \
     masquerade
 
 # Stagefright FFMPEG plugin
