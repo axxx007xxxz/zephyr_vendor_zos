@@ -189,3 +189,9 @@ ZEPHYR_VERSION := $(PRODUCT_VERSION_NAME)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VER
 
 PRODUCT_PROPERTY_OVERRIDES += \
  ro.zephyr.version=$(ZEPHYR_VERSION) \
+
+# DU Utils Library
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
