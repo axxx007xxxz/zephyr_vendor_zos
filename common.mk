@@ -176,3 +176,6 @@ PRODUCT_PACKAGES += \
 
 # Squisher Location
 SQUISHER_SCRIPT := vendor/zos/tools/squisher
+
+# Include UBER common configuration
+include vendor/zos/config/uber.mk
