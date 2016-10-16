@@ -179,3 +179,13 @@ SQUISHER_SCRIPT := vendor/zos/tools/squisher
 
 # Include UBER common configuration
 include vendor/zos/config/uber.mk
+
+# Zephyr Versioning System
+PRODUCT_VERSION_MAJOR = 6
+PRODUCT_VERSION_MINOR = 0
+PRODUCT_VERSION_NAME = Rallinth
+
+ZEPHYR_VERSION := $(PRODUCT_VERSION_NAME)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)
+
+PRODUCT_PROPERTY_OVERRIDES += \
+ ro.zephyr.version=$(ZEPHYR_VERSION) \
