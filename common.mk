@@ -191,20 +191,17 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 PRODUCT_PACKAGES += \
 	messaging \
         LiveWallpapersPicker \
-        Eleven
+        Eleven 
 
 # Squisher Location
 SQUISHER_SCRIPT := vendor/zos/tools/squisher
 
-# Include UBER common configuration
-include vendor/zos/config/uber.mk
-
 # Zephyr Versioning System
-PRODUCT_VERSION_MAJOR = 6
-PRODUCT_VERSION_MINOR = 1
-PRODUCT_VERSION_NAME = Viserion
+ZEPHYR_VERSION_MAJOR = 6
+ZEPHYR_VERSION_MINOR = 1
+ZEPHYR_VERSION_NAME = Viserion
 
-ZEPHYR_VERSION := $(PRODUCT_VERSION_NAME)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)
+ZEPHYR_VERSION := $(ZEPHYR_VERSION_NAME)-$(ZEPHYR_VERSION_MAJOR).$(ZEPHYR_VERSION_MINOR)
 
 PRODUCT_PROPERTY_OVERRIDES += \
  ro.zephyr.version=$(ZEPHYR_VERSION) \
