@@ -88,10 +88,6 @@ PRODUCT_COPY_FILES += \
    vendor/zos/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 endif
 
-# Substratum
-PRODUCT_COPY_FILES += \
-vendor/zos/prebuilt/common/app/Substratum/Substratum.apk:system/app/Substratum/Substratum.apk
-   
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
@@ -192,7 +188,7 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 PRODUCT_PACKAGES += \
 	messaging \
         LiveWallpapersPicker \
-        Eleven 
+        Music
 
 # Squisher Location
 SQUISHER_SCRIPT := vendor/zos/tools/squisher
