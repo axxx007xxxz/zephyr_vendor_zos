@@ -103,6 +103,7 @@ PRODUCT_COPY_FILES += \
 # Misc packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
+    Email \
     MusicFX \
     LatinIME \
     libemoji \
